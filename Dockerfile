@@ -2,21 +2,22 @@
 FROM alpine:3.7
 
 #install Python and pip
-RUN apk add --update py-pip
+#RUN apk add --update py-pip
 
 #upgrade pip
-RUN pip install --upgrade pip
+#RUN pip install --upgrade pip
 
 # install Python modules
-COPY ./requirements.txt /usr/src/app/requirements.txt
-RUN pip install -r /usr/src/app/requirements.txt
+#COPY ./requirements.txt /usr/src/app/requirements.txt
+#RUN pip install -r /usr/src/app/requirements.txt
 
 #copy files
-COPY app.py /usr/src/app
-COPY index.html /usr/src/app/templates/
+#COPY app.py /usr/src/app
+COPY index.html /usr/src/app/
+RUN echo "000 App Fin 000"
 
 #port number for container
 EXPOSE 80
 
 #run the app
-CMD ["python", "/usr/src/app/app.py"]
+CMD ["/usr/src/app/index.html"]
