@@ -1,5 +1,5 @@
 ﻿# base image
-FROM alpine:3.7
+FROM ubuntu:18.04
 
 #install Python and pip
 #RUN apk add --update py-pip
