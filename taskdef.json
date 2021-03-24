@@ -1,14 +1,14 @@
 [
   {
     "name": "fin-project",
-    "image": "${REPOSITORY_URL}:BUILD_NUMBER",
+    "image": "REPOSITORY_URL:BUILD_NUMBER",
     "networkMode": "awsvpc",
     "essential": true,
     "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "/ecs/fin-project",
-          "awslogs-region": "${AWS_ECR_REGION}",
+          "awslogs-region": "eu-central-1",
           "awslogs-stream-prefix": "ecs"
         }
     },
