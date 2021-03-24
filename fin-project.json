@@ -1,7 +1,7 @@
 [
   {
     "name": "fin-project",
-    "image": "REPOSITORY_URL:BUILD_NUMBER",
+    "image": "REPOSITORY_URI:BUILD_NUMBER",
     "networkMode": "awsvpc",
     "essential": true,
     "logConfiguration": {
