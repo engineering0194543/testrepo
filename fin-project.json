@@ -1,0 +1,16 @@
+"family": "fin-project",
+"containerDefinitions": [
+  {
+    "image": "635892219436/fin-project:v_%BUILD_NUMBER",
+    "name": "fin-project",
+    "cpu":10,
+    "memory": 256,
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80
+      },
+    ]
+  }
+]
