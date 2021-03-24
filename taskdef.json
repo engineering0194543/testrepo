@@ -1,6 +1,6 @@
 [
   {
-    "name": "fin-project",
+    "name": "taskdef",
     "image": "REPOSITORY_URL:BUILD_NUMBER",
     "networkMode": "awsvpc",
     "essential": true,
