@@ -1,7 +1,7 @@
 "family": "fin-project",
 "containerDefinitions": [
   {
-    "image": "635892219436/fin-project:v_%BUILD_NUMBER",
+    "image": "635892219436/fin-project:v_BUILD_NUMBER",
     "name": "fin-project",
     "cpu":10,
     "memory": 256,
